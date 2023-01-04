@@ -29,17 +29,12 @@
 }
 
 @keyframes rotate{
-    /* 50%는 없어도 무방(삭제가능) */
-    50%{
-        transform: rotate(180deg);
-    }
     100%{
         transform: rotate(360deg);
     }
 }
 
 html, body{
-    width: 100%;
     height: 100%;
 }
 
@@ -49,16 +44,8 @@ body{
     color: #fff;
 }
 
-#contents{
-    display: flex;
-    justify-content: center;
-}
-
+/* 메인 컨텐츠 */
 .wrapper{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     margin-top: 50px;
 }
 
@@ -83,7 +70,6 @@ body{
 
 .title .title_img img{
     width: 100%;
-    height: auto;
 }
 
 /* 1만 시간의 법칙 설명 */
@@ -155,8 +141,6 @@ body{
 
 /* 버튼 공통 스타일 */
 button{
-    display: flex;
-    align-items: center;
     font-family: 'GmarketSansBold';
     font-size: 20px;
     color: #5b2386;
